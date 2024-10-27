@@ -1,0 +1,210 @@
+<mxfile host="65bd71144e">
+    <diagram id="a2NXkcE_7nBjrYsM1Okp" name="Page-1">
+        <mxGraphModel dx="2931" dy="1661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="138" style="edgeStyle=none;html=1;exitX=1.016;exitY=0.053;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="56">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="380" y="163" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="class Stats" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="124" y="150" width="190" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="+ strength: int&#10;+ intelligence: int&#10;+ defence: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="56" vertex="1">
+                    <mxGeometry y="26" width="190" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="56" vertex="1">
+                    <mxGeometry y="80" width="190" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="+ Stats()&#10;+ Stats(int strength, int intelligence, int defence)&#10;+ getStrength(): int&#10;+ setStrength(int strength): void&#10;+ getIntelligence(): int&#10;+ setIntelligence(int intelligence): void&#10;+ getDefence(): int+ setDefence(int defence): void&#10;+ updateStats(int strength, int defence, int intelligence): void&#10;+ createSnapshot(): Stats&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="56" vertex="1">
+                    <mxGeometry y="88" width="190" height="152" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" style="edgeStyle=none;html=1;entryX=0.506;entryY=1.021;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="64" target="101">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="class Team" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="-370" width="220" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="+ teamName: String&#10;+ teamMembers: ArrayList&lt;Member&gt;&#10;+ isTeamAlive: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="64" vertex="1">
+                    <mxGeometry y="26" width="220" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="64" vertex="1">
+                    <mxGeometry y="80" width="220" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="+ Team(String teamName, &#10;ArrayList&lt;Member&gt; teamMembers, &#10;boolean isTeamAlive)&#10;+ addMember(Member newMember): void&#10;+ getTeamSize(): int+ isTeamAlive(): boolean&#10;+ checkAlive(int index): boolean&#10;+ getMember(int slot): Member&#10;+ getTeamName(): String&#10;+ getMembers(): String&#10;+ totalTeamIntelligence(Team team): int&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="64" vertex="1">
+                    <mxGeometry y="88" width="220" height="162" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" style="edgeStyle=none;html=1;entryX=0.384;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="70" target="63">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="class Armour" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="385" y="500" width="190" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="+ armourName: String&#10;+ defenceBuff: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="70" vertex="1">
+                    <mxGeometry y="26" width="190" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="70" vertex="1">
+                    <mxGeometry y="70" width="190" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="+ Armour()&#10;+ Armour(String name, int buff)&#10;+ getName(): String&#10;+ getDefenceBuff(): int&#10;+ setDefenceBuff(int n): int&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="70" vertex="1">
+                    <mxGeometry y="78" width="190" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" style="edgeStyle=none;html=1;entryX=0.468;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="75" target="63">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="780" y="470"/>
+                            <mxPoint x="510" y="470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="class Weapon" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="635" y="500" width="290" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="+ weaponName: String&#10;+ weaponType: String&#10;+ damageRoll: int&#10;+ strengthBuff: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="75" vertex="1">
+                    <mxGeometry y="26" width="290" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="75" vertex="1">
+                    <mxGeometry y="100" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="+ Weapon()&#10;+ Weapon(String name, String type, int roll, int buff)&#10;+ getName(): String&#10;+ rollDamage(): int&#10;+ getStrengthBuff(): int&#10;+ setStrengthBuff(int n): int&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="75" vertex="1">
+                    <mxGeometry y="108" width="290" height="132" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" style="edgeStyle=none;html=1;entryX=0.34;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="82" target="63">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="219" y="470"/>
+                            <mxPoint x="470" y="470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="class Ring" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="134" y="500" width="170" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="+ ringName: String&#10;+ intelligenceBuff: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="82" vertex="1">
+                    <mxGeometry y="26" width="170" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="82" vertex="1">
+                    <mxGeometry y="70" width="170" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="+ Ring()&#10;+ Ring(String name, int buff)&#10;+ getName(): String&#10;+ getIntelligenceBuff(): int&#10;+ setIntelligenceBuff(int n): int&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="82" vertex="1">
+                    <mxGeometry y="78" width="170" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.013;exitY=0.041;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="88" target="61">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="720" y="290"/>
+                            <mxPoint x="720" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="class Class" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="280" width="230" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="+ className: String&#10;+ classDescription: String&#10;+ strengthBuff: int&#10;+ defenceBuff: int&#10;+ intelligenceBuff: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="88" vertex="1">
+                    <mxGeometry y="26" width="230" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="88" vertex="1">
+                    <mxGeometry y="110" width="230" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="+ Class(String name, String description, &#10;int strength, int defence, int intelligence)&#10;+ getClassName(): String&#10;+ getClassDescription(): String&#10;+ getStrengthBuff(): int&#10;+ getDefenceBuff(): int&#10;+ getIntelligenceBuff(): int&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="88" vertex="1">
+                    <mxGeometry y="118" width="230" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="61">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="920" y="20" as="sourcePoint"/>
+                        <mxPoint x="635" y="128" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="20"/>
+                            <mxPoint x="720" y="128"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" value="class Race" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="10" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="+ raceName: String&#10;+ raceDescription: String&#10;+ strengthBuff: int&#10;+ defenceBuff: int&#10;+ intelligenceBuff: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="92" vertex="1">
+                    <mxGeometry y="26" width="190" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="92" vertex="1">
+                    <mxGeometry y="110" width="190" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="+ Race(String name, String description, &#10;int strength, int defence, int intelligence)&#10;+ getRaceName(): String&#10;+ getRaceDescription(): String&#10;+ getStrengthBuff(): int&#10;+ getDefenceBuff(): int&#10;+ getIntelligenceBuff(): int&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="92" vertex="1">
+                    <mxGeometry y="118" width="190" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="class Battle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="-800" width="340" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="+ Team team1 &#10;+ Team team2 &#10;+ Random random&#10;+ int roundNumber &#10;+ int maxRounds" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="98" vertex="1">
+                    <mxGeometry y="26" width="340" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="98" vertex="1">
+                    <mxGeometry y="110" width="340" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="+ Battle(Team team1, Team team2)&#10;+ startBattle(): void&#10;+ announceBattleStart(boolean team1Starts): void&#10;+ startRound(boolean team1Starts): void&#10;+ concludeBattle(): void&#10;+ takeTurn(Team attackingTeam, Team defendingTeam): void&#10;+ executeMemberAction(Member attacker, &#10;boolean willDefend, Team defendingTeam): void&#10;+ selectTarget(Team defendingTeam): Member&#10;+ executeAttack(Member attacker, Member target): void&#10;+ calculateDamage(Member attacker, Member target): int&#10;+ resetDefenseStatus(Team team): void&#10;+ team1Starts(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="98" vertex="1">
+                    <mxGeometry y="118" width="340" height="192" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" style="edgeStyle=none;html=1;entryX=1.004;entryY=0.33;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="102" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="class Diceroll" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="620" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="102" vertex="1">
+                    <mxGeometry y="26" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="+ roll(int sides): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="102" vertex="1">
+                    <mxGeometry y="34" width="160" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" style="edgeStyle=none;html=1;entryX=-0.017;entryY=0.206;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.008;exitY=0.042;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="115" target="57">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint y="16"/>
+                            <mxPoint y="187"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" value="class Effect" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="-310" width="290" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="+ name: String&#10;+ description: String&#10;+ type: String&#10;+ strengthChange: int&#10;+ defenceChange: int&#10;+ intelligenceChange: int&#10;+ duration: int&#10;+ isActive: boolean&#10;+ originalStats: Stats" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="115" vertex="1">
+                    <mxGeometry y="26" width="290" height="164" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="115" vertex="1">
+                    <mxGeometry y="190" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="+ Effect(String name, String description, &#10;String type, int strengthChange, int defenceChange, &#10;int intelligenceChange, int duration)&#10;+ apply(Stats targetStats): void&#10;+ isActive(): boolean&#10;+ getName(): String&#10;+ getDescription(): String&#10;+ getType(): String&#10;+ getStrengthChange(): int&#10;+ getDefenceChange(): int&#10;+ getIntelligenceChange(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="115" vertex="1">
+                    <mxGeometry y="198" width="290" height="172" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" style="edgeStyle=none;html=1;entryX=0.518;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="60" target="67">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="class Member" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;strokeColor=default;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="385" y="30" width="250" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="+ memberName: String&#10;+ health: int&#10;+ memberRace: Race&#10;+ memberClass: Class&#10;+ baseStats: Stats&#10;+ stats: Stats&#10;+ armour: Armour&#10;+ ring: Ring&#10;+ weapon: Weapon&#10;+ defending: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="60" vertex="1">
+                    <mxGeometry y="26" width="250" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;" parent="60" vertex="1">
+                    <mxGeometry y="170" width="250" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="+ Member(String memberName, int health, &#10;Race memberRace, Class memberClass, &#10;Armour armour, Ring ring, Weapon weapon)&#10;+ getName(): String&#10;+ getStrength(): int&#10;+ getDefence(): int&#10;+ getIntelligence(): int&#10;+ getHealth(): int&#10;+ getBaseStats(): Stats&#10;+ getCurrentStats(): Stats&#10;+ getWeaponName(): String&#10;+ getWeaponDamage(): int&#10;+ isAlive(): boolean+ isDefending(): boolean&#10;+ setDefending(boolean defending): void&#10;+ takeDamage(int damage): void&#10;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;strokeWidth=1;" parent="60" vertex="1">
+                    <mxGeometry y="178" width="250" height="232" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="120" target="56">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="class StatCalculator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="84" width="270" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="120" vertex="1">
+                    <mxGeometry y="26" width="270" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="+ applyBuffs(Stats stats, Class memberClass, &#10;Race memberRace, Armour armour, Ring ring, &#10;Weapon weapon): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="120" vertex="1">
+                    <mxGeometry y="34" width="270" height="66" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
